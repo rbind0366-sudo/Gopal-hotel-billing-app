@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gopal Sweets - Premium Billing System</title>
+</head>
+<body style="font-family: 'Segoe UI', sans-serif; background: #fff8f0; margin: 0; padding: 0;">
+
+    <div style="max-width: 500px; margin: auto; background: white; min-height: 100vh; box-shadow: 0 0 30px rgba(0,0,0,0.1);">
+        
+        <div style="background: linear-gradient(135deg, #d32f2f 0%, #8b0000 100%); color: white; padding: 40px 20px; text-align: center; border-radius: 0 0 40px 40px; box-shadow: 0 10px 20px rgba(0,0,0,0.2);">
+            <h1 style="margin: 0; font-size: 32px; letter-spacing: 2px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">GOPAL SWEETS</h1>
+            <p style="margin: 8px 0 0; font-style: italic; opacity: 0.9;">"परंपरा स्वाद और शुद्धता की" ✨</p>
+        </div>
+
+        <div style="display: flex; gap: 12px; padding: 0 20px; margin-top: -30px;">
+            <div style="flex: 1; background: white; padding: 15px; border-radius: 20px; text-align: center; box-shadow: 0 8px 15px rgba(0,0,0,0.1); border-bottom: 4px solid #d32f2f;">
+                <small style="color: #999; font-weight: bold; font-size: 10px; text-transform: uppercase;">आज की बिक्री</small>
+                <div id="tAmt" style="font-size: 20px; font-weight: 800; color: #d32f2f;">₹ 0</div>
+            </div>
+            <div style="flex: 1; background: white; padding: 15px; border-radius: 20px; text-align: center; box-shadow: 0 8px 15px rgba(0,0,0,0.1); border-bottom: 4px solid #ffa000;">
+                <small style="color: #999; font-weight: bold; font-size: 10px; text-transform: uppercase;">कुल ग्राहक</small>
+                <div id="tCount" style="font-size: 20px; font-weight: 800; color: #ffa000;">0</div>
+            </div>
+        </div>
+
+        <div style="padding: 25px;">
+            <div style="background: #fff; padding: 25px; border-radius: 25px; border: 1px solid #eee; box-shadow: 0 10px 20px rgba(0,0,0,0.03);">
+                
+                <label style="font-size: 12px; font-weight: bold; color: #d32f2f;">ग्राहक विवरण</label>
+                <input type="text" id="cn" placeholder="👤 ग्राहक का नाम" style="width: 100%; padding: 14px; margin: 8px 0 15px; border: 2px solid #f1f1f1; border-radius: 12px; font-size: 15px; outline: none; box-sizing: border-box;">
+                
+                <label style="font-size: 12px; font-weight: bold; color: #d32f2f;">आइटम का चयन</label>
+                <select id="ci" style="width: 100%; padding: 14px; margin: 8px 0 15px; border: 2px solid #f1f1f1; border-radius: 12px; background: white; outline: none; box-sizing: border-box;">
+                    <optgroup label="मिठाई">
+                        <option>काजू कतली</option>
+                        <option>गुलाब जामुन</option>
+                        <option>बेसन लड्डू</option>
+                        <option>खोया बर्फी</option>
+                        <option>रसगुल्ला</option>
+                    </optgroup>
+                    <optgroup label="नाश्ता">
+                        <option>समोसा (प्रति नग)</option>
+                        <option>खस्ता कचोरी</option>
+                        <option>पनीर पकोड़ा</option>
+                        <option>ढोकला</option>
+                    </optgroup>
+                </select>
+
+                <div style="display: flex; gap: 10px;">
+                    <div style="flex: 2;">
+                        <label style="font-size: 12px; font-weight: bold; color: #d32f2f;">वजन (kg/gm)</label>
+                        <input type="text" id="cw" placeholder="उदा. 500gm या 1kg" style="width: 100%; padding: 14px; margin-top: 8px; border: 2px solid #f1f1f1; borde
