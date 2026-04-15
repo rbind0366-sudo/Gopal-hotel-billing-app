@@ -1,0 +1,84 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff5e6;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.app-card {
+    width: 100%;
+    max-width: 450px;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    overflow: hidden;
+    border: 1px solid #eee;
+}
+
+.header {
+    background: linear-gradient(135deg, #d32f2f, #b71c1c);
+    color: white;
+    padding: 35px 20px;
+    text-align: center;
+}
+
+.header h1 { margin: 0; font-size: 28px; }
+
+.stats-container {
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+    background: #fafafa;
+}
+
+.stat-box {
+    flex: 1;
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid #eee;
+}
+
+.form-area { padding: 25px; }
+
+input, select {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 2px solid #f0f0f0;
+    border-radius: 12px;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+input:focus { border-color: #d32f2f; }
+
+.btn-save {
+    width: 100%;
+    padding: 18px;
+    background: #d32f2f;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(211,47,47,0.3);
+}
+
+.btn-save:hover { background: #b71c1c; }
+
+.bill-item {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-left: 5px solid #d32f2f;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
